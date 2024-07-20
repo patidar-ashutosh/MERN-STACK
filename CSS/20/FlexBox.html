@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            display: flex;
+            /* direction */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* wrap */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow iss shorthand of flex-direction and flex-wrap */
+            /* flex-flow: row wrap; */
+
+            /* justify-content horizontal*/
+            /* flex-direction: row; */
+            /* justify-content: start; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            /* justify-content vertically*/
+            /* height: 1200px; */
+            /* flex-direction: column; */
+            /* justify-content: start; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+
+            /* align-items horizontal */
+            /* flex-direction: column; */
+            /* height: 1200px; */
+            /* align-items: start; */
+            /* align-items: center; */
+            /* align-items: end; */
+
+            /* align-items vertically */
+            /* flex-direction: column; */
+            /* height: 1200px; */
+            /* align-items: start; */
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: stretch; */
+            /* align-items: baseline; */
+
+            /* center of container */
+            /* height: 600px; */
+            /* align-items: center; */
+            /* justify-content: center; */
+
+            /* align-content */
+            height: 600px;
+            /* flex-wrap: wrap; */
+            /* align-content: start; */
+            /* align-content: end; */
+            /* align-content: center; */
+
+            /* gap: 50px; */
+
+        }
+
+        .box{
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: cadetblue;
+        }
+        #box3{
+            background-color: blueviolet;
+            /* order: -1; */
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            /* flex-basis: 400px; */
+            /* flex is shorthand of order flex-grow flex-shrink flex-basis */
+            flex: -1 3 3 400px;
+            /* align-self: center; */
+        }
+        #box4{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+</body>
+</html>
+
+<!-- 
+
+what is flexbox?
+flextbox ek 1D layout method hai jise ham chahe to row wise ya column wise layout create kar sakte hai
+
+flexbox
+1) flex container : flex container means aapdo je parent div hoy ene flex container kevay.
+2) flex item : flex item means flext container ma jetla pan element hoy ene flex item kevay.
+3) main axis : main axis means je horizontal line hoy ene main axis kevay.
+main start : main start means jyathi main axis start thato hoy. 
+main end : main end means jya main axis end thato hoy. 
+4) cross axis : main axis means je vertical line hoy ene cross axis kevay.
+cross start : cross start means jyathi cross axis start thato hoy. 
+cross end : cross end means jya cross axis end thato hoy.
+
+Flex-container Properties:
+
+
+display: flex-direction
+flex-direction: row -> flex-direction: row e by default hoy che je flex item ne row ma display kare che.
+flex-direction: row-reverse -> flex-direction: row-reverse e flex item ne row ma display kare che
+pan reverse ma display karshe.
+flex-direction: column -> flex-direction: column e flex item ne column na display kare che.
+flex-direction: column-reverse -> flex-direction: column-reverse e flex item ne column ma display kare che
+pan reverse ma display karshe.
+
+what is wrap?
+wrap means kw jetli display nee size hoy thaya sidhu same line display kare
+nai to pachi new line ma aavi jaay.
+
+wrap property
+flex-wrap: nowrap -> flex-wrap: nowrap e by default hoy che
+ane e flex item ne wrap nai thava de.
+flex-wrap: wrap -> flex-wrap: wrap e flex item ne wrap kari deshe.
+flex-wrap: wrap-reverse -> flex-wrap: wrap-reverse e flex item ne wrap karse pan reverse ma.
+
+flex-flow : flex-flow e wo shorthand property hai flex-direction and flex-wrap ke
+jisme pehle ham flex-direction ki value deta hai or fir flex-wrap ki
+flex-flow : flex-directionValue flex-wrapValue;
+
+
+justify-content
+justify-content e main axis means horizontal li apply thay che
+justify-content che e flex-direction par aadhar rake che
+matlab ke je justify-content ni value e kai rite work karshe
+jo flex-direction: row; hashe to justify-content horizontal(row) wise work karshe
+ane jo flex-direction: column; hashe to justify-content vertically(column) wise work karshe
+
+justify-content: start -> justify-content: start e flex item ne start ma lai jashe (by default value)
+justify-content: center -> justify-content: center e flex item ne center ma lai jashe 
+justify-content: end -> justify-content: end e flex item ne end ma lai jashe
+justify-content: space-between -> justify-content: space-between start ane end element ne
+flex container ni border par rakhse ane baki bija flex item ni vache same space aapi deshe.
+justify-content: space-around -> justify-content: space-around e flex item ni
+left ane right side same space aapshe
+justify-content: space-evenly -> justify-content: space-evenly e badhi size thi same space leshe
+
+
+align-items
+align-items e cross axis means ke vertically apply thay che
+align-items pan same justify-content jevuj che
+align-items: stretch -> align-items: stretch me items hai wo 100% height le lete hai. (by defalut value)
+align-items: baseline -> align-items: baseline me jo element ni height and width alg hoy to pan content same line ma rakhe che.
+
+Differnt Between justify-content and align-items
+flex-direction: row; hoy to justify-content che e row wise work kar she
+ane flex-direction: column; hoy to justify-content che e column wise work kar she
+flex-direction: row; hoy to align-items che e clomun wise work kar she
+ane flex-direction: column; hoy to align-items che e row wise work kar she
+
+align-content
+align-content no use jyare aapde content ne flext-wrap: wrap; kariye che
+tyare je flex item vache je space aave che tene remove karva use kariye chiye.
+
+
+
+
+
+flex-items properties:
+flex-item property no use aapde flex ni item mate kariye chiye
+
+order -> order property no use flex item na order ne change karva mate thay che
+
+flex-grow: speed -> flex-grow no use jayre koi flex item ne bhija flex item
+nee speed karta fast grow karvo hoy tyare thay che
+pan flex-grow e flex container hoy eni full width lai le che
+
+flex-shrink: speed -> flex-shrink no use jayre koi flex item ne bhija flex item
+nee speed karta fast shrink karvo hoy tyare thay che
+
+flex-basis: size -> flex-basis ka use dimational set karne ke liye hota hai
+yani flex-basis ka use karke ham width set kar sakte hai
+lekin width and flex-basis property me different itna hota hai ki
+yadi hamne width:100px; diya hai or content jyada hoga to content hidden ho jaaye ga
+lekin yadi hamne flex-basis:100px; diya hai or content jyada hoga to hamare element
+ki width automatically increase ho jaaye gee
+
+flex : flex hai wo shorthand hai order flex-grow flex-shrink flex-basis property ka
+flex : orderValue flex-growValue flex-shrinkValue flex-basisValue;
+
+align-self: value -> align-self same align-item jevu j work kare che
+different etlo che ke align-self e koi ek flex item ne move karshe
+
+gap : gap ka use flex item ke bich me space dene ke liye hota hai
+-->

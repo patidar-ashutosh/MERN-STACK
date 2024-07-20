@@ -1,0 +1,11 @@
+line-height: 2.7em;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+-webkit-
+z-index: 2;   z-index: 1;   z-index: 3;
+backface-visibility: hidden;
+vertical-align: top;
+pointer-events: none;
+transform-origin: 105% 50%;
+appearance: none;
+aspect-ratio: 1/1;

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container p{
+            padding: 5px 10px;
+            border: 2px solid green;
+        }
+
+        /* Code for Child Selector (>) */
+        /* div#container > p {
+            background-color:green;
+        } */
+
+        /* Code for Adjacent Sibling Selector (+) */
+        div + p {
+           background-color:green;
+        }
+        
+        /* Code for General Sibling Selector (~) */
+        /* div ~ p{
+            background-color:green;
+        } */
+
+        /* Special Example for General Sibling Selector (~) */
+        .test ~ p{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- READ THIS :-> https://www.educative.io/answers/what-does-the-p-plus-sign-css-selector-mean
+    READ THIS :-> https://techbrij.com/css-selector-adjacent-child-sibling
+    READ THIS :-> https://www.browserstack.com/guide/sibling-selectors-in-css -->
+
+    <!-- Child Selector (>) : Child Selector hai wo sirf uske child element pe hee css apply kare ga
+    The child selector selects all elements that are the children of a specified element. -->
+
+
+    <!-- Adjacent Sibling Selector (+) (plus) Sign: Adjacent Sibling Selector hai wo us element ke baad yadi hamne diya gya element uska next element hoga to 
+    us element pe css apply karde ga or only first element pe hee css apply kare ga
+    Example : div + p { css }
+    yani ki div element ke end hone ke baad yadi uska next element p hoga to wo uspe css apply karde ga.
+    NOTE : yani div ke baad 5 p element hoge to to sirf first p element pe hee css apply kare ga -->
+    
+
+    <!-- General Sibling Selector (~) (tilde) Sign : General Sibling Selector hai wo us element ke end hone ke baad hamne jo element diya hoga uspe
+    css ko apply kar deta
+    Example : div ~ p{ css }
+    yani ki div element ke end hone ke baad jitne bhi p element hoge un sabpe wo css apply ho jaaye ge -->
+
+
+    <!-- Example -->
+    <div id="container">            
+        <p>First</p>
+        <div>
+            <p>Child Paragraph</p>
+        </div>
+        <p>Second</p>
+        <p>Third</p>      
+    </div>
+
+    <!-- Special Example for General Sibling Selector (~) -->
+    <div>
+        <div class="test">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+        </div>
+    
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <div>
+            <p>7</p>
+        </div>
+        <p>8</p>
+    </div>
+
+    <p>9</p>
+
+    <p>Four</p>
+    
+</body>
+</html>

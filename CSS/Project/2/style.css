@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navList{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+#navList li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+#navLink a{
+    text-decoration: none;
+    color: #000;
+}
+#navOptions p{
+    border-left: 2px solid gold;
+    padding-left: 1rem;
+}
+
+.box1 img{
+    height: 100%;
+    width: 100%;
+}
+.box1{
+    position: relative;
+}
+.box1Content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 13rem;
+}
+.box1Content h2{
+    margin: 20px 0px 40px 0px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.box1Content button{
+    padding: 1rem 2rem;
+    border: 0px;
+    background-color: #0315ff;
+    color: white;
+    font-weight: 600;
+}
+.box1Content button:hover{
+    background-color: #dc3545;
+}
+
+.box2{
+    display: flex;
+    gap: 40px;
+    padding-top: 80px;
+    justify-content: center;
+}
+.box2Img{
+    position: relative;
+}
+.box2Img img{
+    height: 250px;
+    width: 350px;
+}
+.box2Img h2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(244, 244, 242, 0.557);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.box2Img h2:hover{
+    color: #0315ff;
+}
+
+.box3{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.box3Content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    top: 35%;
+    left: 55%;
+}
+.box3Content h2{
+    font-size: 50px;
+}
+.box3Content button{
+    padding: 1rem 2rem;
+    border: 0px;
+    background-color: #0315ff;
+    color: white;
+    font-weight: 600;   
+}
+.box3Content h3{
+    color: red;
+    font-size: 40px;
+}
+
+.box4{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+#box4h2{
+    padding-bottom: 50px;
+    padding-top: 80px;
+    text-align: center;
+    font-weight: 600;
+}
+.box4Content img{
+    height: 350px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.box4Content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.box4Content span{
+    font-size: 15px;
+}
+.box4Content h3,h4{
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box4Content button{
+    background-color: #0315ff;
+    border: 0px;
+    padding: 15px 50px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    opacity: 0;
+}
+.box4Content:hover button{
+    opacity: 1;
+}
+
+.box5{
+    background-color: #f5f7f9;
+    padding: 80px 80px;
+    display: flex;
+    gap: 130px;
+
+}
+
+.footerBox{
+    background-color: #252525;
+    padding: 80px 150px;
+    display: flex;
+}
+#footerBoxLeftContent{
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 80px;
+}
+#footerBoxLeftContent li a{
+    color:rgba(255, 255, 255, 0.6);;
+    text-decoration: none;
+    padding-right: 30px;
+}
+#footerBoxLeftContent li a:hover{
+    color: white;
+}
+.footerBoxContent{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 80px;
+    gap: 10px;
+}
+.footerBoxContent a{
+    color:rgba(255, 255, 255, 0.6);;
+    text-decoration: none;
+}
+.footerBoxContent a:hover{
+    color: white;
+}

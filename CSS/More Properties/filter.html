@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 600px;
+            width: 600px;
+
+
+            /* by default filter none hee hota hai */
+            /* filter: none; */
+
+            /* px , rem , em , not use percentage */
+            filter: blur(10px);
+
+            /* only percentage */
+            filter: brightness(200%);
+
+            /* only percentage */
+            filter: contrast(200%);
+
+            /* x ,y ,blur , color */
+            filter: drop-shadow(10px 10px 10px red);
+
+            /* 0->0% , 1->100% */
+            filter: grayscale(1);
+
+            filter: hue-rotate(180deg);
+
+            /* only percentage */
+            filter: invert(200%);
+
+            /* 0->0% , 1->100% */
+            filter: opacity(1);
+
+            /* 0->0% , 1->100% */
+            filter: saturate(8);
+
+            /* 0->0% , 1->100% */
+            filter: sepia(1);
+
+            /* add multiple values  */
+            filter: blur(10px) grayscale(1);
+        }
+    </style>
+</head>
+<body>
+    <img src="img.jpg" alt="">
+</body>
+</html>

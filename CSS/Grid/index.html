@@ -1,0 +1,97 @@
+what is grid?
+grid ek 2D(two-dimensional) layout hota hai.
+jisme hamara content row and columns ke formate me hota hai.
+
+grid me row , columns and gap hota hai. gap ko gutters bhi bola jaata hai.
+
+grid VS flexbox
+1) flexbox ka use ham layout me content ki position dene ke liye use karte hai.
+1) grid ka use ham layout create karne ke liye karte hai.
+2) flexbox 1D(one-dimensional) layout hai.
+2) grid 2D(two-dimensional) layout hai.
+
+IN SHORT
+flexbox is specifice to position of content.
+grid is specifice to layout creations.
+
+
+how to create grid?
+display: grid ka use karke ham element ko grid me convert karte hai
+jise hamara content hai to grid ho jata hai.
+
+how to create row and column?
+row create karne ke liye ham -> grid-template-rows property ka use karte hai.
+column create karne ke liye ham -> grid-template-columns property ka use karte hai.
+
+grid-template-columns property ki values me ham width dete hai ki box ki width kitne hogi.
+grid-template-rows property ki values me ham height dete hai ki box ki height kitne hogi.
+
+repeat() function
+repeat() function ka use ham is liye karte hai ki hame same width and height ko multiple time likhna na pade.
+repeat() function me first ham value dete hai ki kitne time repeat karna hai
+or second value me ham size(height ya width) dete hai.
+repeat(NumberOfRepeat , size(height or width))
+
+
+Flexible Grids?
+Flexible Grids yani ki jiska use karke ham responsive website create kar sakte hai.
+
+NOTE: yadi hame responsive website create karna hoga to ham px or % ke jgape fr ka use kare ge.
+
+how to add gap?
+gap add karne ke liye ham -> grid-gap property ka use karte hai.
+grid-gap: RowGap ColumnGap;
+yadi hame row and column dono me same gap dena hai to ham direct
+grid-gap: gapValue; bhi de sakte hai.
+
+
+
+yadi hame kisi element ko ek line se start ho kar kisi another line pe jaake end karva na hai
+to ham grid-row-start ,grid-row-end OR grid-column-start ,grid-column-end ka use karte hai.
+
+jise yadi hame element ko column ki kisi line se another line tak le jana ho to ham
+grid-column-start and grid-column-end ka use karte hai
+jisme ham grid-column-start me starting line number denge jaha se ham start karenge
+or grid-column-end me ending line number denge jaha pe ham end karenge.
+
+
+yadi hame element ko row ki kisi line se another line tak le jana ho to ham
+grid-row-start and grid-row-end ka use karte hai
+jisme ham grid-row-start me starting line number denge jaha se ham start karenge
+or grid-row-end me ending line number denge jaha pe ham end karenge.
+
+grid-row : grid-row hai wo grid-row-start and grid-row-end hi shorthand property hai.
+grid-row : grid-row-startValue / span (kitni row span karni hai).
+
+grid-column : grid-column hai wo grid-column-start and grid-column-end hi shorthand property hai.
+grid-column : grid-column-startValue / span (kitni column span karni hai).
+
+
+What is grid-area?
+grid-area hai wo shorthand property hai grid-row-start / grid-column-start / grid-row-end / grid-column-end.
+yani ki yadi hame kisi element ko row and column dono side ek saath me move karna ho
+tab kam 4 property ki jaga pe sirf grid-area ka use kar sakte hai
+grid-area : grid-row-startValue / grid-column-startValue / grid-row-endValue / grid-column-endValue;
+
+
+
+what is grid-template-areas?
+grid-template-areas ka use ham row and columns ko name dene ke liye karte hai.
+
+ham grid-template-areas ka use karke jo name dete hai hame usse connect bhi karna padta hai
+yani ki us name ki jaga pe konse element ka content show hoga wo bata ne ke liye 
+hame us name ko element ke saath connect karna padta hai.
+jo ki ham grid-area peoperty ka use karke karenge.
+
+SOME RULES FOR grid-template-areas
+-> ham hamare grid me jitne row and columns dete hai hame utne names ki value deni padti hai.
+-> ham name ko is tarike se denge ki same name ka ek reactangle create hona chahiye.
+-> yadi hamne kisi name ko pehle use kar liya hai to ham usse firse dusri jaaga pe use nahi kar paayenge.
+
+
+what is grid-auto-rows ?
+grid-auto-rows ka use jab ham pata na ho ki hame kitne rows chahiye
+tab ham grid-auto-rows ka use karte hai.
+grid-auto-rows hai wo automatically rows ko add karta jaata hai.
+Syntax : grid-auto-rows : minmax();
+minmax(minValue, maxValue) me ham minimum height and maximum height dete hai.

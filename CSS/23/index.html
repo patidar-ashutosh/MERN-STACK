@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: bisque;
+            height: 500px;
+            width: 100vw;
+            border: 2px solid black ;
+        }
+        .box{
+            width: 180px;
+            height: 60px;
+            background-color: blue;
+            margin: 10px;
+            border: 2px solid green;
+            border-radius: 20px;
+
+            position: relative;
+            /* animation-name: boxmoving; */
+            /* animation-duration: 5s; */
+            /* animation-iteration-count: 1; */
+            /* animation-delay: 1s; */
+
+            /* animation-timing-function:ease; */
+            /* animation-timing-function:linear; */
+            /* animation-timing-function:ease-in; */
+            /* animation-timing-function:ease-out; */
+            /* animation-timing-function:ease-in-out; */
+            /* animation-timing-function:cubic-bezier(0, -0.56, 0.42, -0.02); */
+            /* animation-timing-function: steps(10); */
+
+            /* animation-direction: normal; */
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+
+            /* animation-fill-mode: none; */
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: backwards; */
+            /* animation-fill-mode: both; */
+
+            /* animation-play-state: paused; */
+            /* animation-play-state: running; */
+
+            /* @keyframes duration | timing-function | delay |
+            iteration-count | direction | fill-mode | play-state | name */
+            /* animation: 3s ease-in 0s infinite alternate none running boxmoving; */
+            animation: 3s steps(5) 0s infinite alternate none running boxmoving;
+
+
+            /* @keyframes duration | easing-function | delay | name */
+            /* animation: 3s linear 1s boxmoving; */
+
+            /* two animations */
+            /* animation: */
+            /* 3s linear slidein, */
+            /* 3s ease-out 5s slideout; */
+        }
+
+        /* keyframes using from and to */
+        @keyframes boxmoving{
+            from{
+                top: 20px;
+                left: 20px;
+            }
+            to{
+                top: 20px;
+                left: 1300px;
+            }
+        }
+
+        /* keyframes using percentage */
+        /* @keyframes boxmoving{
+            0%{
+                top: 20px;
+                left: 20px;
+            }
+            100%{
+                top: 20px;
+                left: 1300px;
+            }
+        } */
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+
+</body>
+</html>
+
+<!--
+
+Animation
+animation etle ke ek style remove tai second style apply thavani process.
+
+Property
+
+animation-name: -> animation-name: ka use animation ka name dene ke liye hota hai
+jis name ka use ham @keyframes me karke animation create karte hai. 
+@keyframes -> @keyframes ka use animation define karne ke liye hota hai
+jisme ham from se To tak kya hoga wo decide karte hai.
+animation-duration: -> animation-duration ka use animation kitne time tak run hoga wo decide karta hai.
+animation-iteration-count: -> animation-iteration-count ka animation kitne baar run hoga
+wo decide karne ke liye hota hai.
+animation-delay: -> animation-delay ka use animation kitne time ke baad start hoga
+wo decide karne ke liye hota hai.
+
+animation-timing-function property ka use start se lekar end tak kesi speed
+hogi wo define karne ke liye hota hai.
+animation-timing-function:ease start slow hoga fir fast hoga or end me slow ho jaaye ga.
+animation-timing-function:linear start to end same speed hogi.
+animation-timing-function:ease-in start slow hoga fir end tak fast jaaye ga.
+animation-timing-function:ease-out start fast hoga or end hoga.
+animation-timing-function:ease-in-out start slow hoga fir fast hoga or end me slow ho jaaye ga.
+animation-timing-function:steps() hai wo animation ko steps me complete karta hai.
+animation-timing-function:cubic-bezier(0, -0.56, 0.42, -0.02)
+
+animation-direction property ka use animation ka direction dene ke liye hota hai
+animation-direction: normal me from se to tak jata hai.
+animation-direction: alternate me from se to fir waps to se from tak jata hai.
+animation-direction: reverse me to se from tak jata hai.
+animation-direction: alternate-reverse to se from fir from se to tak jata hai.
+
+animation-fill-mode property ka use animation complete hone ke baad
+wo kaha pe stop hoga wo decide karne ke liye hota hai.
+animation-fill-mode: none usse original position pe wapis aa jata hai.
+animation-fill-mode: forwards me wo end(to) pe stop ho jaata hai.
+animation-fill-mode: backwards me wo start(from) pe stop ho jaata hai.
+animation-fill-mode: both me wo end(to) pe stop ho jaata hai.
+
+
+animation-play-state: paused kare ge to animation paused means stop rahe ga.
+animation-play-state: running karge to animation running means chalta rahe ga.
+
+-->

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+        }
+
+        .container img{
+            margin: 10px;
+        }
+
+        /* position: relative; */
+        .relativeImg2{
+            position: relative;
+            top: 70px;
+            left: 250px;
+        }
+
+        /* position: absolute; */
+        .absoluteImg2{
+            position: absolute;
+            top: 70px;
+            left: 250px;
+        }
+
+        /* position: fixed; */
+        .fixedImg2{
+            position: fixed;
+        }
+
+        /* position: sticky; */
+        .fixed{
+            position: sticky;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- position: relative; -->
+    <!--     
+    <div class="container">
+        <img src="1.jpg" alt="No image" height="150px" width="150px" class="relativeImg1">
+        <img src="2.jpg" alt="No image" height="150px" width="150px" class="relativeImg2">
+        <img src="3.jpg" alt="No image" height="150px" width="150px" class="relativeImg3">
+        <img src="4.webp" alt="No image" height="150px" width="150px" class="relativeImg4">
+    </div>
+    -->
+
+    <!-- position: absolute; -->
+    <!--     
+    <div class="container" style="position: relative;">
+        <img src="1.jpg" alt="No image" height="150px" width="150px" class="absoluteImg1">
+        <img src="2.jpg" alt="No image" height="150px" width="150px" class="absoluteImg2">
+        <img src="3.jpg" alt="No image" height="150px" width="150px" class="absoluteImg3">
+        <img src="4.webp" alt="No image" height="150px" width="150px" class="absoluteImg4">
+    </div>
+    -->
+
+
+    <!-- position: fixed; -->
+    <!-- 
+    <div class="container" style="height: 800px;">
+        <img src="1.jpg" alt="No image" height="150px" width="150px" class="fixedImg1">
+        <img src="2.jpg" alt="No image" height="150px" width="150px" class="fixedImg2">
+        <img src="3.jpg" alt="No image" height="150px" width="150px" class="fixedImg3">
+        <img src="4.webp" alt="No image" height="150px" width="150px" class="fixedImg4">
+    </div>
+    -->
+
+    <!-- position: sticky; -->
+    <div class="container">
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p class="fixed" style="background-color: red;">this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+    </div>
+
+
+    
+</body>
+</html>
+
+
+<!-- 
+
+what is position property?
+position property no use position deside karva mate thay che.
+
+position ma 5 values che.
+1) static : static e default hoy che
+ane aapre position: static par top,right,bottom,left apply na kari sakiye
+2) relative : position: relative e current position this element ne move karva mate use thay che
+position: relative no jyare use kariye tyare eni gap(means ke real position) to rehshej
+3) absolute : position: absolute no use kariye tyre ena parent ne position: relative aapi devanu
+position: absolute eni je current space hoy ene 0 kari de che
+4) fixed : position: fixed; e element ni position fix kari de che
+matlab ke e aakih website mate e position par fix rahe she
+5) sticky : position: sticky; e element ne fix kari deshe
+pan aapde ena mate top, right, left, bottom mathi koi ek ne aapvu farjiyat che
+jethi ene kabar pade ke ene kai position par jai ne fix thavanu che
+ane element sticky tya sudhi rehshe jetli ena parent element nee height hashe
+
+-->

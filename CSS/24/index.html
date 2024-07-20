@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            height:200px;
+            width:200px;
+            background-color: blanchedalmond;
+            border:2px solid black;
+
+            /* transition  */
+            transition-property: all;
+            /* transition-property: width; */
+            /* transition-property: width,background-color; */
+            transition-duration: 5s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in;
+
+            /* property name | duration */
+            /* transition: margin-right 4s; */
+
+            /* property name | duration | delay */
+            /* transition: margin-right 4s 1s; */
+
+            /* property name | duration | easing function */
+            /* transition: margin-right 4s ease-in-out; */
+
+            /* property name | duration | easing function | delay */
+            /* transition: margin-right 4s ease-in-out 1s; */
+
+            /* Apply to 2 properties */
+            /* transition:
+            margin-right 4s,
+            color 1s; */
+        }
+
+        /* pseudo-class */
+        .box:hover{
+            width:600px;
+            background-color: gold;
+            margin: 100px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">1</div>
+
+</body>
+</html>
+
+
+<!-- 
+what is Transition?
+transition etle ke ek style ne remove kari element par biji style apply karvi.
+
+Animation ane transition ma different etlo che ke
+animation e source to dectimation sudhi jaay che.
+jyare transition e ek single step ma hoy che.
+
+Transition ko apply karne ke liye ham pseudo-class ka use karte hai.
+
+Transition Property
+transition-property: ;
+transition-duration: ;
+transition-delay: ;
+transition-timing-function: ;
+
+shorthand
+transition: ;
+-->

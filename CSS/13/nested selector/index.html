@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nesting selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child"></div>
+        <p>this is p</p>
+    </div>
+    
+</body>
+</html>
+
+<!-- SYNTAX
+
+1
+parentRule {
+  /* parent rule style properties */
+  & childRule {
+    /* child rule style properties */
+  }
+}
+
+
+2
+.parent-rule {
+  /* parent rule properties */
+  .child-rule {
+    /* child rule properties */
+  }
+}
+
+
+3
+.parent-rule {
+  /* parent rule style properties */
+}
+
+.parent-rule .child-rule {
+  /* style properties for .child-rule descendants for .parent-rule ancestors */
+}
+
+
+4
+.parent-rule {
+  /* parent rule properties */
+  :hover {
+    /* child rule properties */
+  }
+}
+
+/* the browser parses the above nested rules as shown below */
+.parent-rule {
+  /* parent rule properties */
+}
+
+.parent-rule *:hover {
+  /* child rule properties */
+}
+
+
+
+5
+.parent-rule {
+  /* parent rule properties */
+  &:hover {
+    /* child rule properties */
+  }
+}
+
+/* the browser parses the above nested rules as shown below */
+.parent-rule {
+  /* parent rule properties */
+}
+
+.parent-rule:hover {
+  /* child rule properties */
+}
+
+-->

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Of HTML</title>
+
+    <!-- adding fav icon -->
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <link rel="icon" href="https://images.unsplash.com/photo-1502899576159-f224dc2349fa?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+
+</head>
+
+<body>
+
+    <!-- what is html?
+    HTML full form is Hypertext Markup Language
+    IN ENGLISH
+    HTML is the standard markup language for creating Web pages.
+
+    Hypertext meaning multiple web pages ek dusre ke saath link hote hai.
+    Markup meaning jisme ham apne content ko tags ka use karke present karte hai.
+    Language meaning jisme kisi chis ko likhe ne ke set of rules hote hai.
+
+    USE OF HTML
+    1. HTML ka use karke ham website ka skeleton create karte hai.
+    2. HTML ka use karke ham basic building blocks create karte hai.
+    3. HTML hame web page ka description provide karte hai.
+    means ki ye wala part paragraph hai, ye wala part image hai.
+    4. HTML ka use ham website ka basic structure create karne ke liye karte hai. -->
+
+
+    <!-- What is Tags?
+    Tags is something that the browser to how to render the different type of element.
+
+    Kisi bhi HTML tags me 3 items hote hai.
+    1. opening tags
+    2. content
+    3. closing Tags
+
+    What is Empty Tag OR Self-Closing Tag?
+    HTML me kuch ese bhi tags hote hai jine ham open ya close karne ki need nahi hoti hai.
+    jo tag open and close one time me hee hote hai une Empty ya self-closing tag kehte hai.
+    Example : br, hr, input, img -->
+
+    <!-- What is comments?
+    comments yani ki esi lines jisko hame browser me show nahi karna hai.
+    wo lines ham sirf developer ki understanding ke liye likhe te hai. 
+
+    IN ENGLISH
+    The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
+    -->
+
+    <!-- What is element?
+    element yani ki opening tag se lekar closing tag tak ke sari line ko element kehte hai
+    yani opening tag + content + closing tag jisko element kehte hai.
+
+    IN ENGLISH
+    An HTML element is defined by a start tag, some content, and an end tag.
+
+    Type of element:
+    hamare pass 2 type ke element hote hai.
+    1. Block Element : Block element ka use web page ke kisi bhi main container ko design karne ke liye hota hai.
+    ham esa bhi ke sakte hai ki block element yani ki jisme ham apne content ko blocks me divide kar deta hai.
+    jo block elements hote hai wo full width lete hai
+    Example of Block Element : <div>, <p>, <h1> to <h6>, and <ul></ul> etc.
+
+    2. Inline Element : Inline element ka use ham web page ke kisi bhi container me kisi data ko highlight karne
+    ke liye ya formate karne ke liye use karte hai.
+    jo inline elements hote hai wo unka content jitna hota hai utni hee width lete hai.
+    Example od Inline Element : em , strong, a etc. -->
+
+    <!-- block element and inline element -->
+    <div style="background-color: aqua;">this is a div 1</div>
+    <div style="background-color: aqua;">this is a div 2</div>
+
+    <p style="background-color: blue;">this is a para</p>
+
+    <span style="background-color: red;">this is a span</span>
+    <span style="background-color: red;">this is a span</span>
+
+    <h2 style="background-color: blanchedalmond;">this is h2 1</h2>
+    <h2>this is h2 2</h2>
+
+    <span style="background-color: blueviolet;">this is span</span>
+    <p style="background-color: forestgreen;">this is p</p>
+
+    <!-- What is Attributes in HTML ?
+    Attributes hai wo hame kisi bhi tag ke liye kuch additional information dete hai.
+    IN ENGLISH
+    HTML attributes provide additional information about HTML elements.
+    
+    Example : <img src="" alt=""> to isme jo src and alt hai vo attributes hai img tag ke
+    jo ki hame additional information de rahe hai ki img ka source kya hoga
+    or uska alt yani ki alternate text kya hoga -->
+
+    <!-- Heading Tags : hamare pass h1 se h6 tak ke heading tag hote hai -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraph Tag -->
+    <p>This is paragraph tag</p>
+
+    <!-- div tag : div tag ka use kisi section ya division ko create karne ke liye hota hai
+    yani ki div ka use karke ham ek container create kar sakte hai jisko ham apne hisab 
+    se chahe to customise kar sakte hai -->
+    <div>
+        <h6>heading 6 inside div</h6>
+    </div>
+
+    <!-- br tag : br tag hai wo next line/new line add karke deta hai -->
+    <p>this is paragraph 1</p>
+    <p>this is paragraph 2</p>
+    <br>
+    <p>this is paragraph 3</p>
+
+    <!-- img tag : img tag ka use web page me image ko add karne ke liye hota hai -->
+    <img src="https://images.unsplash.com/photo-1502899576159-f224dc2349fa?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="No image found" height="100" width="100">
+    <br>
+
+    <!-- a anchor tag : a tag ka use web page me link ko add karne ke liye hota hai -->
+    <a href="https://www.google.com">This is Google</a> <br>
+    <!-- by default target is _self -->
+    <a href="https://www.google.com" target="_blank">This is Google</a> <br>
+    <a href="https://www.google.com" target="_parent">This is Google</a> <br>
+    <a href="https://www.google.com" target="_top">This is Google</a> <br>
+    <!-- call using anchor tag -->
+    <a href="tel:+91 6523100000">Call Now</a> <br>
+    <!-- mail using anchor tag -->
+    <a href="mailto:test@gmail.com">Mail Now</a>
+
+    <!-- Horizontal Rule element -->
+    <hr color="red" width="20px">
+
+    <pre>
+        pre tag
+            is print
+        content in we write
+            in
+                html code
+    </pre>
+
+    <!-- Text Formatting Tags -->
+    <p>this is <b>b tag</b></p>
+    <p>this is <strong>strong tag</strong></p>
+    <b>this is bold tag</b>
+    <strong>this is strong tag work same like b tag</strong>
+
+    <p>this is <i>i tag</i></p>
+    <p>this is <em>em tag</em></p>
+
+    <p>this is <del>del tag</del></p>
+    <p>this is <mark>mark tag</mark> </p>
+
+    <p>x<sup>2</sup> + y<sup>2</sup> = z<sup>3</sup></p>
+    <p>a<sub>1</sub> + a<sub>2</sub> = b<sub>3</sub></p>
+
+    <p>Lorem ipsum <s>omnis</s> sit amet.</p>
+
+    <u>this is underline tag</u>
+    <small>this is small tag</small>
+
+    <!-- <figure>: The Figure with Optional Caption element -->
+    <!-- figure tag ka use ham kisi content ke saathe me content ka caption dene ke liye karte hai -->
+    <figure style="border: thin #c0c0c0 solid; padding: 5px;">
+        <img src="https://picsum.photos/200" alt="">
+        <img src="https://picsum.photos/200" alt="">
+        <img src="https://picsum.photos/200" alt="">
+        <figcaption
+        style="background-color: #222;
+            color: #fff;
+            font: italic smaller sans-serif;
+            padding: 3px;
+            text-align: center;
+        ">This is caption of images</figcaption>
+    </figure>
+
+    <!-- blockquote tag ka use jab ham koi content apne web page me add karna chahte ho joki hamara nahi hota hai.
+    yani ki wo content kisi or ka hota hai jo ki ham kisi or source se lekar aate hai tab ham us content ko blockquote me likhte hai.
+    or jo source ka name hota hai wo ham cite tag me likhte hai.
+    IN ENGLISH
+    The <blockquote> tag specifies a section that is quoted from another source. -->
+
+    <blockquote cite="http://www.thefamouspeople.com/profiles/linus-torvalds-3972.php">
+        <p>
+            "One of the most influential people in the world."
+        </p>
+        <cite>-- Time Magazine <a href="http://www.thefamouspeople.com/profiles/linus-torvalds-3972.php"
+                target="_blank" rel="noopener noreferrer">The Famous People</a></cite>
+    </blockquote>
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<!-- ye line hamare browser ko bata ti hai ki ye hamara HTML documents hai or
+is me jo html likhi hau hai wo HTML5 hai.
+it's tell our browser that it's an HTML5 version documents. -->
+<html lang="en">
+<!-- lang="en" ye bata hai ki web page ka content hai wo english me hoga.
+it's tell that the content of web page is in english. -->
+<head>
+<!-- head tag me hamara metadata hota hai.
+metadata yani ki hamara style tag, script tag, meta tag, title tag etc. -->
+    <meta charset="UTF-8">
+    <!-- charset="UTF-8" ka matlab hai ki ham yaha pe UTF-8 ka use kar rahe hai encoding ke liye -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport yani ki hamari display me hame jitna content dikhta hai.
+    yani ki display ki size ko viewport kehte hai.
+    yeha pe ham viewport me content set kar rahe hai ki hamare web page ki width hogi
+    jitne hamare device ki width hogi utni.
+    or initial-scale=1.0 yani ki jab website load hoga to by default zoom kitna hona chahiye -->
+    <title>Document</title>
+</head>
+<body>
+<!-- body tag me hamare web page ka content hota hai. -->
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: aqua;
+    height: 700px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.box{
+    background-color: bisque;
+    border: 2px solid red;
+}
+#header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Nested Grid */
+#content{
+    display: grid;
+    /* width: ; */
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+#content .img img{
+    height: 240px;
+    width: 100%;
+}

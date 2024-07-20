@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: red;
+            width: 400px;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        @media (min-width:300px) and (max-width:500px){
+            .box{
+                background-color: gold;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+   
+    <div class="box">Hello </div>
+    
+</body>
+</html>
+
+<!-- 
+what is media queries?
+media queries no use aapde responsive website create karva mate kariye chiye
+jema media queries thi aapde different-different display size ma
+element kai rite show thashe e decide kariye chiye.
+
+syntax:
+@media (condition){
+    
+}
+
+different-different screen ke liye ham different-different style property(css) apply karna chahte hai
+tab ham media queries ka use karte hai.
+
+min-width(500px): min-width means aapde je media query lakhi hase e minimum 500px
+pachi etle ke 500+ width thashe pachi apply thase.(means je by default e 0 to 500px sudhi rehse).
+
+max-width(500px): max-width means aapde je media query lakhi hase e 0 to 500px
+sudhi apply thase pachi 500+ ma je by default hase e apply thase.
+
+-->

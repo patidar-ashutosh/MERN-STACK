@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        
+      /* universal selecter */
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .borderTag {
+        background-color: chocolate;
+
+        /* border-style: solid;
+            border-width: 5px;
+            border-color: yellow; */
+        /* border: solid yellow 5px; */
+
+        border-top: solid yellow 5px;
+        border-right: solid black 5px;
+        border-bottom: solid green 5px;
+        border-left: solid darkblue 5px;
+
+        /* border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px; */
+        border-radius: 10px;
+      }
+
+      .abc {
+        background-color: aqua;
+        width: 50%;
+        height: 150px;
+      }
+
+      span {
+        background-color: rgb(87, 26, 143);
+        /* we can not apply height and width in inline element */
+        /* width: 50%; */
+        /* height: 300px; */
+      }
+
+      #padding {
+        background-color: aquamarine;
+        border: solid black 5px;
+
+        /* top, right, bottom, left */
+        padding: 10px;
+
+        /* padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px; */
+        /* top , right , bottom , left */
+        /* padding: 10px 20px 30px 40px; */
+
+        /* top-bottom , right-left */
+        /* padding: 10px 20px; */
+      }
+
+      #margin {
+        background-color: aquamarine;
+        border: solid black 5px;
+
+        /* top, right, bottom, left */
+        /* margin: 10px; */
+
+        /* margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-left: 40px; */
+        /* top , right , bottom , left */
+        /* margin: 10px 20px 30px 40px; */
+
+        /* top-bottom , right-left */
+        margin: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="borderTag">this is border tag</h1>
+
+    <span>this is span</span>
+
+    <p class="abc">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi,
+      dolores.
+    </p>
+
+    <p class="abc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iste beatae
+      amet ipsum nobis voluptate, nihil fugit enim illum similique.
+    </p>
+
+    <p id="padding">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat
+      fugit sed cum eos illum. Cupiditate nihil corrupti blanditiis iure.
+    </p>
+
+    <p id="margin">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex rerum
+      doloribus accusamus pariatur optio libero excepturi dicta esse provident
+      laboriosam.
+    </p>
+  </body>
+</html>
+
+<!--
+
+border
+width , height
+
+Box Model-> Box Model yani ki hamare jitne bhi element hai wo ek reactangle formate me hote hai
+jise ham Box Model kehte hai.
+
+-> hamare pass box model me 4 propertiy hoti hai
+1) content : content yani ki jo ham likh te hai
+2) padding : padding yani ki jo ham border ke inside or content ke upside jo space dete hai
+3) border : border yani ki ham jo border dete hai
+4) margin : margin yani ki jo ham border ke upside me jo space dete hai
+
+universal selecter : * jiska use ham by default margin and padding ko 0 set karne ke liye karte hai
+-->

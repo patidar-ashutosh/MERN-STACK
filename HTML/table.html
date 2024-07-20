@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Normal Table Example -->
+    <table>
+        <caption>Normal Table Example</caption>
+
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Earning</th>
+                <th>Saving</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>24000</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>22000</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>19000</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>27000</td>
+                <td>13000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>92000</td>
+                <td>36000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- Rowspan : rowspan is use to makes cell span over a multiple rows.
+    rowspan ka use kar ke ham kisi bhi cell ko multiple rows tak span kar sakte hai.
+    yani ki rowspan ka use karke ham multiple rows ko single row me combine kar sakte hai.
+        
+    Rowspan Table Example -->
+    <table>
+        <caption>Rowspan Table Example</caption>
+
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Earning</th>
+                <th>Saving</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>24000</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>22000</td>
+                <td rowspan="2">8000</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>19000</td>
+                <!-- <td>8000</td> -->
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>27000</td>
+                <td>13000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>92000</td>
+                <td>36000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Colspan : colspan is use to makes cell span over a multiple columns.
+    colspan ka use kar ke ham kisi bhi cell ko multiple columns tak span kar sakte hai
+    yani ki colspan ka use karke ham multiple columns ko single column me combine kar sakte hai.
+        
+    Colspan Table Example -->
+    <table>
+        <caption>Colspan Table Example</caption>    
+
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+              <td colspan="2">Sum: $180</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+    <!-- Colgroup : colgroup ka use kar ke ham kisi specific column ko ya fir multiple columns ko style kar sakte hai.
+    colgroup ka use ham kisi specific columns ko style karna ho tab karte hai.
+    Colgroup Table Example -->
+    <table>
+        <caption>Colgroup Table Example</caption>
+
+        <colgroup>
+            <col span="1" style="background-color: red;">
+            <col span="1" style="visibility: collapse;">
+            <col span="1">
+            <col span="1" style="background-color: gold;">
+            <col span="1" style="background-color: cyan;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+                <th>Col 4</th>
+                <th>Col 5</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

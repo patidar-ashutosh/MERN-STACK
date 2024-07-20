@@ -1,0 +1,49 @@
+.parent{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+}
+
+.parent .child{
+    background-color: gray;
+    height: 150px;
+    width: 150px;
+}
+
+/* .parent{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+
+    .child{
+        background-color: gray;
+        height: 150px;
+        width: 150px;
+    }
+} */
+
+
+.parent{
+    /* this css is apply the .parent class element */
+    &:hover{
+        background-color: yellow;
+    }
+}
+/* yadi ham & ka use karte hai yani ki wo css .parent class wale element pe apply hogi na ki child  element par
+yani ki jo ye 26 to 31 line hai use ham kuch ese bhi likh sakte hai  */
+.parent:hover{
+    background-color: yellow;
+}
+
+
+.parent{
+    /* this css is apply in all parent child element */
+    :hover{
+        background-color: aqua;
+    }
+}
+
+
+/* .parent *:hover{
+    background-color: yellow;
+} */

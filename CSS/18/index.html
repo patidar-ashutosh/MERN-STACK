@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .abc{
+            border: 2px solid black;
+            background-color: red;
+            width: 75%;
+        }
+
+        .xyz{
+            border: 2px solid yellow;
+            background-color: pink;
+            width: 50%;
+        }
+
+        .viewport{
+            border: 2px solid yellow;
+            background-color: pink;
+            width: 75vw;
+            height: 50vh;
+        }
+
+        .parent{
+            border: 2px solid red;
+            background-color: rgb(142, 103, 179);
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .child{
+            background-color: gold;
+            width: 50%;
+            font-size: 2em;
+            padding: 3em;
+        }
+
+        .firstPara{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- pertancge unite -->
+    <!-- <div class="abc">
+        <div class="xyz">
+        </div>
+    </div> -->
+    
+    <!-- viewport unite -->
+    <!-- <div class="viewport">
+    </div> -->
+
+    <!-- em unite -->
+    <!-- <div class="parent">
+        <div class="child">
+            hey
+        </div>
+    </div> -->
+
+    <!-- rem unite -->
+    <p class="firstPara">this is rem unite</p>
+
+</body>
+</html>
+
+<!--
+
+unite
+
+% : pertancge e ena parent element par aadhar rakhe che ke ene height , width ketli thashe
+
+vh && vw : viewport height & width e aapdi viewport na aadhare set thay che
+
+em : em ma je element hoy che e ena parent par aadhar rakhe che etle ke parent na jetle px hoy
+ena satthe em multiply tai new px create kare che
+
+rem : rem e html par aadhar rakhe che etle ke html ma je default value hoy ena saathe multiply
+kari ne new px e create kare che
+
+-->

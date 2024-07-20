@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aqua;
+            height: 600px;
+            border: 2px solid black;
+        }
+        
+        .box1{
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            margin: 20px;
+            background-color: white;
+            position: relative;
+            animation-name: moving;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes moving {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            30%{
+                top: 0px;
+                left: 400px;
+                height: 50px;
+                width: 50px;
+                background-color: green;
+            }
+            60%{
+                top: 250px;
+                left: 400px;
+                height: 150px;
+                width: 150px;
+                background-color: yellow;
+            }
+            80%{
+                top: 250px;
+                left: 0px;
+                height: 50px;
+                width: 50px;
+                background-color: pink;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                height: 150px;
+                width: 150px;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

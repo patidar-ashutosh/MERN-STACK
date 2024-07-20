@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* global variable */
+        :root{
+            --darkPink : rgb(159, 66, 82);   
+        }
+
+        .box{
+            /* local variable */
+            --fontSize : 50px;
+            font-size: var(--fontSize);
+            color: var(--darkPink);
+        }
+
+        .box2{
+            color: var(--darkPink);
+            /* font-size: var(--fontSize); */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <p>this is p</p>
+        <h1>this is h1</h1>
+        <span>this is span</span>
+    </div>
+
+    <div class="box2">
+        <p>this is p2</p>
+        <h2>this is h2</h2>
+    </div>
+    
+</body>
+</html>
+
+<!-- 
+custome variable in css::
+
+What is Variables?
+variables etle ke jeni andar aapde koi value store karine ene multiple jagyae use kari sakiye.
+
+Syntax Of Variable -> 
+--VariableName-Property : value;
+
+How to access variable?
+-> var(variableName)
+
+Type of Variable:
+->2 Type of Variable
+1) Local Variable: local variable etle ke jene aapde ena block ni ander j access kari sakiye.
+2) Global Variable : global variable etle ke jene aapde koi pan block ma access kari sakiye.
+
+-->

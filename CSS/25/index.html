@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <p>this is p</p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<!--
+transform
+transform ka use kar ke ham element ko rotate, scale, skew ya element ko move bhi kar sakte hai.
+
+transform values: 
+
+transform: rotate(180deg);
+transform: rotateX(180deg);
+transform: rotateY(180deg);
+transform: rotateZ(90deg);
+
+    
+transform: scale(2);
+transform: scaleX(2);
+transform: scaleY(4);
+transform: scaleZ(-3);
+
+
+transform: skew(45deg);
+transform: skewX(45deg);
+transform: skewY(45deg);
+
+transform: translate(x,y);
+transform: translateX(100px);
+transform: translateY(100px);
+transform: perspective(500px) translateZ(100px);
+transform: translateZ(100px);
+
+
+IMPORTANT POINT
+Jitne bhi Z axis wale property hai unke saath hame perspective ki bhi value dena compulsory hai.
+perspective ki value hato ham us element ke parent element ko de sakte hai
+ya fir perspective ki value ham jis line me ham Z axis property ki value denge uske saath bhi de sakte hai
+Like This : transform: perspective(500px) translateZ(100px);
+
+write multiple values
+transform: rotate(45deg) scale(1.5);
+
+matrix : matrix is shorthand property
+transform: matrix(scaleX, skewY, skewX, scaleY, translateX, translateY);
+
+-->

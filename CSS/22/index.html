@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* declear global */
+      :root {
+        --svbsd-color: green;
+      }
+
+      .continer {
+        background-color: blue;
+        border: 2px solid var(--svbsd-color);
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1 {
+        background-color: gold;
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+        border: 2px solid rgb(39, 28, 28);
+        overflow: hidden;
+
+        /* offset-x | offset-y | color */
+        /* box-shadow: 10px 10px red; */
+
+        /* offset-x | offset-y | blur-radius | color */
+        /* box-shadow: 10px 15px 20px red; */
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        /* box-shadow: 10px 20px 15px 60px red; */
+
+        /* inset | offset-x | offset-y | color */
+        /* box-shadow: inset 10px 15px red; */
+
+        /* Any number of shadows, separated by commas */
+        /* box-shadow: 10px 20px red , 30px 30px green; */
+
+        /* using custome variable */
+        /* box-shadow: 10px 10px var(--svbsd-color); */
+
+        /* add multiple shadow */
+        box-shadow: 10px 10px red , 20px 20px green;
+      }
+
+      #head1 {
+        /* offset-x | offset-y | blur-radius | color */
+        /* text-shadow: 1px 1px 2px black; */
+
+        /* color | offset-x | offset-y | blur-radius */
+        /* text-shadow: #fc0 1px 0 10px; */
+
+        /* offset-x | offset-y | color */
+        /* text-shadow: 5px 5px #558abb; */
+
+        /* color | offset-x | offset-y */
+        /* text-shadow: white 2px 5px; */
+
+        /* offset-x | offset-y
+        /* Use defaults for color and blur-radius */
+        /* text-shadow: 5px 10px; */
+
+        /* add multiple shadow */
+        text-shadow: 5px 5px red, 13px 13px green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="continer">
+      <div class="box1">
+        <h1 id="head1">this is h1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+          voluptas odit dolores minima libero rerum voluptates doloribus
+          quibusdam cum, facere nihil consectetur! Non sapiente quisquam
+          aspernatur rem commodi inventore voluptate!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+2 type of shadow
+1) box shadow
+2) text shadow
+
+custome variable in css
+syntax: 
+--VariableName-Property : value;
+access of variable : var(variableName)
+-->

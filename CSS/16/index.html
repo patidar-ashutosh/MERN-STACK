@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{      
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* box sizing border box */
+        .box{
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* block element */
+        .block{
+            background-color: pink;
+            width: 500px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+        }
+
+        /* inline element */
+        .inline{
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            margin: 10px;   
+            /* padding: 30px; */
+        }
+
+        /* block to inline */
+        .blockToinline{
+            background-color: pink;
+            width: 500px;
+            height: 150px;
+            /* margin: 10px; */
+            /* padding: 30px; */
+            display: inline;
+        }
+
+        /* inline to block */
+        .inlineToblock{
+            display: block;
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            margin: 10px;   
+            padding: 30px;
+        }
+
+        /* inline-block property */
+        .inlineblock{
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- box sizing border box -->
+    <div class="box">this is box sizing</div>
+
+    <!-- block element -->
+    <h1 class="block">this is heading 1</h1>
+    <h1 class="block">this is heading 2</h1>
+
+    <!-- inline element -->
+    <span class="inline">this is span 1</span>
+    <span class="inline">this is span 2</span>
+
+    <!-- block to inline -->
+    <h1 class="blockToinline">this is block element 1</h1>
+    <h1 class="blockToinline">this is block element 2</h1>
+
+    <!-- inline to block -->
+    <span class="inlineToblock">this is inline to block 1</span>
+    <span class="inlineToblock">this is inline to block 2</span>
+
+    <span class="inlineblock">this is inline-block 1</span>
+    <span class="inlineblock">this is inline-block 2</span>
+
+</body>
+</html>
+
+<!--
+
+box-sizing: border-box ka use ham box ki height and width ko same rakhne ke liye karte hai
+
+what is display ?
+display property no use aapde behavior change karva mate kariye chiye
+display property element no behavior specifie kare che
+
+
+block element property
+1) width 100% (left - right).
+2) new line
+3) height and width apply kari sakiye
+4) margin and padding apply kari sakiye
+
+inline element property
+1) same line
+2) width jetli content ni hoy etle hoy
+3) custom height and width nai aapi sakiye
+4) margin horizontiali(left-right) apply thay padding apply thay content overflow thay che
+
+display: inline -> convert block element to inline
+display: block -> convert inline element to block
+
+display: inline-block -> tag no behavior to inline pan apade height and width apply kari saksu
+
+-->

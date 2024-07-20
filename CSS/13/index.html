@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      h1 {
+        background-color: green;
+      }
+
+      h2 {
+        background-color: red !important;
+      }
+
+      p {
+        background-color: cornflowerblue;
+      }
+
+      span {
+        background-color: yellowgreen;
+      }
+
+      /* element selector */
+      p{
+        background-color: green;
+      }
+
+      /* id selector */
+      #firstSpan{
+        background-color: orange;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      /* id selector */
+      #secondSpan{
+        background-color: darkgray;
+      }
+
+      /* class selector */
+      .xyz{
+        background-color: blueviolet;
+      }
+
+      /* pseudo-class selector */
+      .xyz:hover{
+        background-color: red;
+      }
+
+      /* multiple(group) selector */
+      h2 , h1{
+        width: 200px;
+      }
+
+      .abc{
+        background-color: red;
+      }
+
+      p.abc{
+        color: orange;
+      }
+      
+      /* Attribute selectors */
+      a[href]{
+        background-color: cyan;
+      }
+      /* apply red color on href attribute which have value https://example.org */
+      a[href="https://example.org"]{
+        color: red;
+      }
+
+      /* apply text-decoration: none; on href which have id InSensitive */
+      a[href="#InSensitive"]{
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>this is heading</h1>
+
+    <h2 style="background-color: pink">this is h2</h2>
+
+    <p style="background-color: blue">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
+      voluptatum magnam veniam asperiores quae maxime ipsum consectetur minus
+      fugiat repellendus.
+    </p>
+
+    <p style="font-family: 'Courier New', Courier, monospace">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
+      repudiandae, dolorum natus ullam voluptatum temporibus id! Commodi labore
+      magni eius, asperiores corrupti nemo sint atque voluptate nam deleniti
+      dolorum. Tempore.
+    </p>
+
+    <span style="background-color: darkcyan">this is span</span>
+
+    <span id="firstSpan">this is span 1</span>
+    <span id="secondSpan">this is span 2</span>
+
+    <p class="xyz">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
+      nostrum reiciendis omnis. Consequatur quos minus pariatur saepe deleniti!
+      Nesciunt nulla voluptas vitae, debitis placeat facere.
+    </p>
+
+    <p class="xyz">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, eos.</p>
+
+    <p class="xyz">Lorem ipsum dolor sit amet.</p>
+    <p class="xyz">Lorem ipsum dolor sit amet.</p>
+    <p class="xyz">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+
+    <p class="abc">this is paragraph 1</p>
+    <p class="abc">this is paragraph 2</p>
+    <article class="abc">this is article 1</article>
+    <article class="abc">this is article 2</article>
+    
+
+    <ul>
+      <li><a href="#internal">Internal link</a></li>
+      <li><a href="http://example.com">Example link</a></li>
+      <li><a href="#InSensitive">Insensitive internal link</a></li>
+      <li><a href="https://example.org">Example org link</a></li>
+      <li><a href="https://example.org">Example https org link</a></li>
+    </ul>
+
+  </body>
+</html>
+
+<!-- 
+what is css?
+css : cascading style sheet
+
+types of css: 3 types of css
+1) inline css: jo css ham tag ke andar likhte hai usse he inline css kehte hai
+2) internal css: jo css ham same file me head tag style tag me likhte hai usse internal css kehte hai
+3) external css: jo css ham koi new file me likhte hai usse external css kehte hai
+
+!important
+
+Selector
+what is selector : selector ek esa tarika hota hai jise ham html ke kisi bhi tag ko target kar sakte hai
+                    or uspe style(css) apply kar sakte hai
+
+type of selector : 6 types of selector
+1) simple selector : simple selector me 3 type ke selector hote hai
+  a) element(tag) : element yani ki jis me ham element(tag) ke name ka use karke css apply karte hai
+  b) id : id yani ki jis me ham tag ko di gai id ka use karke css apply karte hai
+  c) class : class yani ki jis me ham tag ko di gai class ka use karke css apply karte hai
+
+2) pseudo-class selector : yani ki jo css apply karne ke liye ham pseudo class ka use karte hai.
+
+3) multiple(group) : multiple(group) element ka use karke ham multiple element ko ek saath css apply kar sakte hai.
+
+4) universal selector
+
+5) nested selector : nested selector yani ki jisme ham parent and child element ka use karke element ko target kar sakte hai.
+
+6) attribute selector : attribute selector me ham tag ko uske attribute ka use kar ke target karte hai.
+jesi ki hamare pass koi form me usme ham jis bhi input ka type text ho uspe padding laga na chahte ho to
+ham likhe ge ki : input[type='text']{ padding : 10px}.
+
+-->

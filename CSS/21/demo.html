@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            display: flex;
+            width: 600px;
+        }
+        .box1{
+            display:flex;
+            flex-direction: column;
+        }
+        .t1{
+            height: 100px;
+            width: 200px;
+            background-color: gold;
+            margin: 20px;
+            position: relative;
+            left: 50px;
+        }
+        .box2{
+            overflow: hidden;
+            /* margin: 20px; */
+        }
+        .img1{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            padding: 20px;
+            /* left: 50px; */
+        }
+        .box1 , .box2{
+            width: 50%;
+            height: 300px;
+        }
+
+        @media (max-width:600px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="t1">text1</div>
+            <div class="t1">text2</div>
+        </div>
+        <div class="box2">
+            <img src="1.jpg" alt="" class="img1">
+        </div>
+    </div>
+    
+</body>
+</html>
